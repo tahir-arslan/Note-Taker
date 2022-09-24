@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { findById, createNewNote, validateNote } = require('../../lib/notes');
+const { findById, createNewNote, validateNote, deleteNote } = require('../../lib/notes');
 const { notes } = require('../../db/db');
 
 // load database as json on load
@@ -31,8 +31,7 @@ router.post('/notes', (req, res) => {
     }
 });
 
-// delete by id
-router.delete('/notes', (req, res) => {
+router.delete('/notes/:id', (req, res) => {
     deleteNote(req.params.id, notes);
     if (deleteNote) {
         res.json(notes);

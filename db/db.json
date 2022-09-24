@@ -1,27 +1,19 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "Complete Assignments",
+      "text": "Complete and submit all assignments for the BootCamp! ",
+      "id": "130"
     },
     {
-      "title": "Test Title 2",
-      "text": "Test text 2"
+      "title": "Final Group Assignment",
+      "text": "Work hard and finish the final group assignment with a bang!",
+      "id": "291"
     },
     {
-      "title": "New Note 1",
-      "text": "trolololololololol",
-      "id": "432"
-    },
-    {
-      "title": "dfd",
-      "text": "dfdf",
-      "id": "923"
-    },
-    {
-      "title": "fwfew",
-      "text": "eeeewf",
-      "id": "104"
+      "title": "Time to Celebrate",
+      "text": "Don't forget to celebrate once the course is complete =)",
+      "id": "972"
     }
   ]
 }
