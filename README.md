@@ -6,7 +6,7 @@ This Note Taker application allows a user to write and save notes. It includes a
 
 The user is able to create a new note, which only then a save button becomes available. Once the note is saved, a unique ID is applied to the note through a calculation implemented in `/routes/apiRoutes/noteRoutes.js`. Upon clicking a saved note, it will apply the unique ID to display the selected note on the screen. The user is also able to delete any saved notes.
 
-This project is also deployed on [heroku](https://murmuring-headland-68396.herokuapp.com//)
+This project is also deployed on [heroku](https://murmuring-headland-68396.herokuapp.com/)
 
 #### Screenshot
 ![Screenshot](/public/assets/images/screenshot.png)
