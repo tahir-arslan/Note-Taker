@@ -1,42 +1,37 @@
-# Note Taker Starter Code
+# Note Taker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
+## Description
+This Note Taker application allows a user to write and save notes. It includes a server with routes to access the front end, as well as api routes to communicate with the database.
 
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+The user is able to create a new note, which only then a save button becomes available. Once the note is saved, a unique ID is applied to the note through a calculation implemented in `/routes/apiRoutes/noteRoutes.js`. Upon clicking a saved note, it will apply the unique ID to display the selected note on the screen. The user is also able to delete any saved notes.
 
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
+This project is also deployed on [heroku](https://damp-stream-27722.herokuapp.com/)
 
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+#### Screenshot
+![Screenshot](/public/assets/images/screenshot.png)
 
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License(s)](#licenses)
+4. [Questions](#questions)
 
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+## Installation
+Clone the repo and open the project. In terminal, execute the command `npm i`. This will install all the dependencies required for this application to work.
 
-============
+## Usage
+Once the dependancies are installed, you need to execute `npm start` to start the server. Once the server is running, a message will appear saying,
+```
+API server now on port xxxx!
+```
+Open your browser and go to `localhost:xxxx` where 'xxxx' is the port being used to host the server. 
 
-The application should have a db.json file on the back end that will be used to store and retrieve notes using the fs module.
+## License(s)
+MIT
 
-The following HTML routes should be created:
+## Questions
+My name is Arslan Tahir, the creator of this project. If you have any issues, comments, concerns, or questions regarding this project, feel free to contact me at tahir.arslan@gmail.com.
 
-GET /notes should return the notes.html file.
-
-GET * should return the index.html file.
-
-The following API routes should be created:
-
-GET /api/notes should read the db.json file and return all saved notes as JSON.
-
-POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
-
-============
-
-You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
-
-DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
+If you would like to check out my other projects, feel free to explore my !(GitHub Page)[https://github.com/tahir-arslan/].
+    
